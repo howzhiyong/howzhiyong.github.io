@@ -413,7 +413,7 @@ body {
     z-index: 10;
 }
 
-.title, .projects {
+.title, .projects, .braindump-info {
     position: absolute;
     left: 0;
     top: 20%;
@@ -461,12 +461,33 @@ body {
     right: 15%;
 }
 
-.value-info {  
+.value-info, .profile {  
     justify-content: center;
     text-align: center; 
     top: 45%;
     width: 25%;
 }
+
+#profile {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    left: 10%;
+    top: 30%;
+}
+
+
+.braindump-info {
+    font-size: 20px;
+    text-align: left;
+    left: 35%;
+    top: 30%;
+    padding-top: 5%; 
+    justify-content: center;
+    width: 800px;
+}
+
 
 #students-info {
     left: 37.5%;
@@ -508,11 +529,16 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 16px;
-    backdrop-filter: blur(5px);
-    background: linear-gradient(-45deg, #fae3dc, #fae9ef, #d1eaf3, #f0ddf5);
+    background-color: #E4DEF4;
+    /* background: linear-gradient(-45deg, #fae3dc, #fae9ef, #d1eaf3, #f0ddf5); */
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
+.value-card:hover {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
 
 
 @keyframes gradient {
@@ -531,6 +557,12 @@ body {
 #project-logo {
     width: 150px;
     height: 100%;
+    transition: all .2s ease-in-out; 
+
+}
+
+#project-logo:hover {
+    transform: scale(1.1); 
 }
 
 #projects {
