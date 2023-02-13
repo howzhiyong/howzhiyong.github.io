@@ -94,7 +94,7 @@ body {
     font-style: normal;
     font-weight: 500;
     font-size: 120px;
-    line-height: 120px;
+    line-height: auto;
     letter-spacing: 0.01em;
     text-align: left;
     color: rgb(75, 73, 73);
@@ -394,7 +394,7 @@ body {
 }
 
 #brain {
-    width: 150px;
+    width: 130px;
     height: 400px;
     position: absolute;
     top: 150px;
@@ -413,7 +413,7 @@ body {
     z-index: 10;
 }
 
-.title, .projects, .braindump-info {
+.title, .projects, .braindump-info, .subheader-caption {
     position: absolute;
     left: 0;
     top: 20%;
@@ -461,7 +461,7 @@ body {
     right: 15%;
 }
 
-.value-info, .profile {  
+.value-info {  
     justify-content: center;
     text-align: center; 
     top: 45%;
@@ -474,7 +474,7 @@ body {
     width: 300px;
     border-radius: 50%;
     left: 10%;
-    top: 30%;
+    top: 25%;
 }
 
 
@@ -482,7 +482,7 @@ body {
     font-size: 20px;
     text-align: left;
     left: 35%;
-    top: 30%;
+    top: 25%;
     padding-top: 5%; 
     justify-content: center;
     width: 800px;
@@ -502,12 +502,6 @@ body {
 }
 
 
-@media screen and (max-width: 900px) {
-    #network {
-        right: 14%;
-    }
-}
-
 .projects {
     top: 80%
 }
@@ -518,7 +512,7 @@ body {
 
 .values-subheader {
     font-style: bold;
-    padding-top: 15%
+    padding-top: 15%;
 }
 
 
@@ -572,3 +566,79 @@ body {
 #values {
     background-color:#ffffff;
 }
+
+.subheader-caption {
+    font-size: 16px;
+    left: 10%;
+    justify-content: left;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    left: 10%;
+    top: 65%;
+}
+
+@media screen and (max-width: 1200px) {
+    #network {
+        right: 14%;
+    }
+
+    #brain {
+        height: 300px;
+        width: 100px;
+    }
+
+    .values-subheader {
+        font-size: 20px;
+        padding-top: 20%
+
+    }
+
+    .values-body {
+        font-size: 14px;
+    }
+
+    .name {
+        font-size: 90px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #network {
+        right: 14%;
+    }
+
+    #brain {
+        top: 13%;
+        height: 300px;
+        width: 100px;
+    }
+
+    .name {
+        font-size: 70px;
+    }
+   
+}
+
+@media screen and (max-width: 767px) {
+   .subheader {
+    font-size: 50px;
+   }
+    #profile {
+      height: 200px;
+      width: 200px;
+    }
+    #brain {
+        display: none;
+    }
+
+    .value-card {
+        height: 200px;
+    }
+
+    .values-subheader {
+        padding-top: 20px
+    }
+}
+
