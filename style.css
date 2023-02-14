@@ -29,6 +29,12 @@ html, head, div, body, p, footer {
 
 .navbar-light .navbar-toggler { border: none; }   
 
+.navbar {
+    width: 90% !important;
+    display: flex;
+    justify-content: center;
+}
+
 .hide:focus { outline: 1px rgba(83, 100, 83, 0.119) solid; }
 
 .con {
@@ -52,20 +58,21 @@ html, head, div, body, p, footer {
     width: var(--size);
     height: var(--size);
     filter: blur(calc(var(--size) / 5));
-    background-image: linear-gradient(#fbc2db, rgb(175, 218, 182));
-    animation: rotate var(--speed) var(--easing) alternate infinite;
+    background-image: linear-gradient(#ebc2fb, rgb(175, 204, 218));
+    /* animation: rotate var(--speed) var(--easing) alternate infinite;*/
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     position: absolute;
     align-items: center;
-    margin-top: 20%;
-    margin-left: 30%;
+    margin-top: 0%;
+    margin-left: 10%;
     padding: 10% 10%;
+    overflow: hidden;
   }
   
 .gradient-2 {
-    background-image: linear-gradient(#e7d0da, rgb(210, 237, 214));
-    margin-top: 30%;
-    margin-left: 60%;
+    background-image: linear-gradient(#d5e7d0, rgb(252, 237, 203));
+    margin-top: 18%;
+    margin-left: 65%;
     size: 300px;
 }
   @media (min-width: 720px) {
@@ -391,6 +398,9 @@ body {
 
 #hero-section {
     background-color: #E4DEF4;
+    /*background: linear-gradient(-45deg, #E4DEF4, #f2e2f8, #d1eaf3, #E4DEF4);*/
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
 }
 
 #brain {
