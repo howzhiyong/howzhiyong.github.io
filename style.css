@@ -441,8 +441,13 @@ body {
 	width: 100vw;
 	height: auto;
 	background: #f9f7f9;
-	position: relative;
 	overflow: hidden;
+	padding-bottom: 150px;
+}
+
+.subheader-caption {
+	font-size: 16px;
+	margin-top: 30px;
 }
 
 #hero-section {
@@ -470,22 +475,6 @@ body {
 	display: flex;
 	justify-content: center;
 	z-index: 10;
-}
-
-.title,
-.projects,
-.braindump-info,
-.subheader-caption {
-	position: absolute;
-	left: 0;
-	top: 20%;
-	padding: 0 20px;
-	width: 100%;
-	text-align: center;
-	font-size: 70px;
-	justify-content: center;
-	text-align: center;
-	z-index: 1;
 }
 
 .column {
@@ -517,7 +506,6 @@ body {
 }
 
 #profile {
-	position: absolute;
 	height: 300px;
 	width: 300px;
 	border-radius: 50%;
@@ -528,11 +516,7 @@ body {
 .braindump-info {
 	font-size: 20px;
 	text-align: left;
-	left: 35%;
-	top: 25%;
-	padding-top: 5%;
-	justify-content: center;
-	width: 800px;
+	padding-left: 20px;
 }
 
 #students-info {
@@ -586,18 +570,6 @@ body {
 
 #values {
 	background-color: #ffffff;
-}
-
-.subheader-caption {
-	font-size: 16px;
-	left: 10%;
-	justify-content: left;
-	position: absolute;
-	height: 300px;
-	width: 300px;
-	border-radius: 50%;
-	left: 10%;
-	top: 65%;
 }
 
 @media screen and (max-width: 1200px) {
