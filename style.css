@@ -446,7 +446,7 @@ body {
 .particles-js-canvas-el {
 	position: absolute;
 	top: 0;
-	z-index: -1;
+	z-index: 0;
 	background: #f9f7f9;
 }
 
@@ -460,6 +460,8 @@ body {
 	/*background: linear-gradient(-45deg, #E4DEF4, #f2e2f8, #d1eaf3, #E4DEF4);*/
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
+	width: 100%;
+	overflow: hidden;
 }
 
 #brain {
