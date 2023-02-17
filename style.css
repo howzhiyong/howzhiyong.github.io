@@ -81,7 +81,7 @@ footer {
 
 .gradient-2 {
 	background-image: linear-gradient(#d5e7d0, rgb(252, 237, 203));
-	transform: translate(65%, 18%);
+	transform: translate(65vw, 18vh);
 	size: 300px;
 }
 @media (min-width: 720px) {
