@@ -438,11 +438,16 @@ body {
 }
 
 #particles-js {
-	width: 100vw;
-	height: auto;
-	background: #f9f7f9;
 	overflow: hidden;
 	padding-bottom: 150px;
+	position: relative;
+}
+
+.particles-js-canvas-el {
+	position: absolute;
+	top: 0;
+	z-index: -1;
+	background: #f9f7f9;
 }
 
 .subheader-caption {
