@@ -67,7 +67,7 @@ footer {
 }
 @media (max-width: 720px) {
 	.gradient .gradient-2 {
-		--size: 500px;
+		--size:300px;
 	}
 }
 
@@ -78,12 +78,6 @@ body {
 
 * {
 	transition: all 0.25s ease-out;
-}
-
-.background {
-	background: radial-gradient(73.55% 174.09% at 16.41% 66.95%, #bac8b4 14.36%, #ebe5d5 100%);
-	--easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
-	animation: rotate var(--speed) var(--easing) alternate infinite;
 }
 
 .name,
@@ -437,5 +431,9 @@ body {
 	}
 	.hero {
 		font-size: 18px;
+	}
+	.braindump-info {
+		font-size: 20px;
+		text-align: center;
 	}
 }
