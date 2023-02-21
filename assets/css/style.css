@@ -12,26 +12,6 @@ footer {
 	overflow-x: hidden;
 }
 
-#social {
-	height: 50px;
-	width: 50px;
-	overflow: none;
-}
-
-.links {
-	color: rgb(83, 100, 83);
-	align-items: center;
-	margin-right: 10px;
-	padding-left: 30px;
-	font-family: "Cormorant" !important;
-}
-
-.links:hover {
-	color: rgb(34, 46, 34);
-	text-decoration: none;
-	transition: 0.2s ease-in;
-}
-
 .navbar-light .navbar-toggler {
 	border: none;
 }
@@ -81,10 +61,11 @@ footer {
 
 .gradient-2 {
 	background-image: linear-gradient(#d5e7d0, rgb(252, 237, 203));
-	transform: translate(65vw, 18vh);
 	size: 300px;
+	margin-top: 20%;
+	margin-left: 25%;
 }
-@media (min-width: 720px) {
+@media (max-width: 720px) {
 	.gradient .gradient-2 {
 		--size: 500px;
 	}
@@ -110,7 +91,7 @@ body {
 	font-family: "Lexend";
 	font-style: normal;
 	font-weight: 500;
-	font-size: 120px;
+	font-size: 80px;
 	line-height: auto;
 	letter-spacing: 0.01em;
 	text-align: left;
@@ -125,18 +106,6 @@ body {
 
 .hero {
 	font-size: 20px;
-}
-
-#down {
-	text-align: center;
-	justify-content: center;
-	margin-top: 1%;
-	height: 45px;
-	width: 45px;
-	transition: transform 0.25s;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .container-fluid {
@@ -158,29 +127,6 @@ body {
 	display: none;
 }
 
-#header {
-	font-family: "Cormorant";
-	font-style: normal;
-	font-weight: 700;
-	font-size: 72px;
-	line-height: 100px;
-	align-items: center;
-	text-align: center;
-	color: #4b4841;
-}
-
-#icon {
-	height: 50px;
-	width: 50px;
-	margin-top: 20px;
-	padding: 5px;
-}
-
-.about-me {
-	font-size: 16px;
-	text-align: center;
-}
-
 .reveal {
 	position: relative;
 	transform: translateY(150px);
@@ -193,41 +139,6 @@ body {
 .reveal.active {
 	transform: translateY(0);
 	opacity: 1;
-}
-
-.dot,
-.dot-2,
-.dot-3,
-.dot-4 {
-	width: 150px;
-	height: 120px;
-	position: absolute;
-	filter: blur(30px);
-	padding: 1% 15%;
-	margin-top: 20%;
-	margin-bottom: 20%;
-	margin-left: 1%;
-	border-radius: 50px;
-	background: linear-gradient(-45deg, #f8d1fa, #eac3cf);
-	background-size: 600%;
-	animation: anime 16s linear infinite;
-	overflow: hidden;
-}
-
-.dot-2 {
-	background: linear-gradient(-15deg, #f6d4a7, #ebca90);
-	margin-top: 15%;
-	margin-left: 15%;
-}
-
-.dot-3 {
-	background: linear-gradient(-45deg, #b5cceb, #acc6c0);
-	margin-left: 0%;
-}
-
-.dot-4 {
-	background: linear-gradient(-35deg, skyblue, pink);
-	margin-left: 10%;
 }
 
 .project-logo {
@@ -282,31 +193,6 @@ body {
 	color: #43423f;
 }
 
-.coffee {
-	margin-top: 15%;
-	margin-bottom: 15%;
-	margin-left: 5%;
-}
-
-.diamond {
-	margin-bottom: 10%;
-	margin-left: 6%;
-	width: 130px;
-	height: 140px;
-	padding: 5%;
-}
-
-.chatroom {
-	margin: 10% 0%;
-}
-
-#SAAS {
-	margin: 20% 0%;
-	padding: 5%;
-	width: 85%;
-	height: 120px;
-}
-
 @keyframes anime {
 	0% {
 		background-position: 0% 50%;
@@ -333,43 +219,9 @@ body {
 	.project-info {
 		font-size: 14px;
 	}
-
-	.dot,
-	.dot-2,
-	.dot-3,
-	.dot-4 {
-		padding: 1% 15%;
-		margin-top: 10%;
-		margin-bottom: 20%;
-		margin-left: 10%;
-		width: 100px;
-	}
-
-	.project-logo {
-		margin-top: 10%;
-		margin-left: 5%;
-		position: relative;
-		transition: transform 250ms;
-	}
-
-	.dot-4 {
-		margin-left: 20%;
-	}
-
-	#SAAS {
-		width: 160px;
-		height: 90px;
-	}
 }
 
 @media screen and (max-width: 767px) {
-	.dot,
-	.dot-2,
-	.dot-3,
-	.dot-4 {
-		display: none;
-	}
-
 	.project-logo {
 		margin-top: 10px;
 		margin-bottom: 10px;
@@ -381,18 +233,6 @@ body {
 		align-items: center;
 	}
 
-	.coffee,
-	.chatroom,
-	.diamond {
-		margin: 0%;
-	}
-
-	#SAAS {
-		margin: 4% 0%;
-		height: 150px;
-		width: 220px;
-	}
-
 	.project-header,
 	.project-info,
 	.position-title {
@@ -400,10 +240,10 @@ body {
 	}
 
 	.name {
-		font-size: 70px;
+		font-size: 60px;
 	}
 	.hero #typed {
-		font-size: 30px;
+		font-size: 24px;
 	}
 }
 
@@ -482,40 +322,13 @@ body {
 	z-index: 10;
 }
 
-.column {
-	display: block;
-	float: left;
-	width: 33.33%;
-	background-color: grey;
-	border-radius: 16px;
-	z-index: 10;
-}
-
-#berkeley {
-	left: 13.5%;
-}
-
-#berkeley-info {
-	left: 10%;
-}
-
-#students {
-	justify-content: center;
-	text-align: center;
-}
-
-#network {
-	justify-content: right;
-	text-align: right;
-	right: 15%;
-}
-
 #profile {
 	height: 300px;
 	width: 300px;
 	border-radius: 50%;
 	left: 10%;
 	top: 25%;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .braindump-info {
@@ -588,7 +401,7 @@ body {
 	}
 
 	.name {
-		font-size: 90px;
+		font-size: 70px;
 	}
 }
 
@@ -604,7 +417,7 @@ body {
 	}
 
 	.name {
-		font-size: 70px;
+		font-size: 64px;
 	}
 }
 
@@ -618,5 +431,11 @@ body {
 	}
 	#brain {
 		display: none;
+	}
+	.name {
+		font-size: 44px;
+	}
+	.hero {
+		font-size: 18px;
 	}
 }
