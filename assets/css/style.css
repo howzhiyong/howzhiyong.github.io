@@ -1,12 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800&display=swap");
 html,
 head,
 div,
 body,
 p,
 footer {
-	font-family: "Lexend", sans-serif !important;
+	font-family: "DM Sans", sans-serif !important;
 	color: #32291fd7;
 	align-items: center;
 	overflow-x: hidden;
@@ -14,12 +12,27 @@ footer {
 
 .navbar-light .navbar-toggler {
 	border: none;
+	color: black;
 }
 
 .navbar {
-	width: 90% !important;
+	width: 100% !important;
 	display: flex;
 	justify-content: center;
+	background: #e4def4;
+}
+.navbar a {
+	color:rgb(34, 46, 34);
+	padding: 10px 15px !important;
+	margin: 10px 10px;
+	animation: ease-in 2s;
+}
+
+.navbar a:hover {
+	text-decoration: #300832 underline 1px;
+	text-underline-offset: 5px;
+	scale: 1.05;
+	color: #300832;
 }
 
 .hide:focus {
@@ -31,6 +44,10 @@ footer {
 	justify-content: center;
 }
 
+.mb {
+	width: 90%;
+}
+
 @keyframes rotate {
 	0% {
 		transform: rotate(0deg);
@@ -39,6 +56,13 @@ footer {
 		transform: rotate(360deg);
 	}
 }
+
+.navbar-toggler:active {
+	border: none;
+
+}
+
+.navbar-toggler-icon:active
 
 .gradient,
 .gradient-2 {
@@ -82,14 +106,14 @@ body {
 
 .name,
 .subheader {
-	font-family: "Lexend";
+	font-family: "Manrope", "DM Sans";
 	font-style: normal;
 	font-weight: 500;
 	font-size: 80px;
 	line-height: auto;
 	letter-spacing: 0.01em;
 	text-align: left;
-	color: rgb(75, 73, 73);
+	color: #190729;
 	overflow: hidden;
 }
 
@@ -100,6 +124,7 @@ body {
 
 .hero {
 	font-size: 20px;
+	font-weight: 400;
 }
 
 .container-fluid {
@@ -199,73 +224,10 @@ body {
 	}
 }
 
-@media screen and (max-width: 1200px) {
-	.project-header,
-	.project-info,
-	.position-title {
-		margin-left: 20px;
-	}
-
-	.project-header {
-		font-size: 32px;
-	}
-
-	.project-info {
-		font-size: 14px;
-	}
+.value-header {
+	font-family: "Manrope", sans-serif;
+	font-weight: 600;
 }
-
-@media screen and (max-width: 767px) {
-	.project-logo {
-		margin-top: 10px;
-		margin-bottom: 10px;
-		margin-left: 0%;
-		width: 150px;
-		height: 150px;
-		position: relative;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.project-header,
-	.project-info,
-	.position-title {
-		margin-left: 10px;
-	}
-
-	.name {
-		font-size: 60px;
-	}
-	.hero #typed {
-		font-size: 24px;
-	}
-}
-
-.scroll-container {
-	overflow-y: hidden;
-	overflow-x: auto;
-	white-space: nowrap;
-	padding: 5px 0px;
-	background: transparent;
-	height: 400px;
-	border-radius: 16px;
-	-ms-overflow-style: none; /* IE and Edge */
-	scrollbar-width: none; /* Firefox */
-	margin-bottom: 5%;
-}
-
-.scroll-container::-webkit-scrollbar {
-	display: none;
-}
-
-.photo-gallery {
-	display: inline-block;
-}
-
-.photo-gallery img {
-	margin-right: 22px;
-}
-
 #image {
 	height: 400px;
 }
@@ -284,7 +246,8 @@ body {
 }
 
 .subheader-caption {
-	font-size: 16px;
+	font-family: "Manrope", sans-serif;
+	font-size: 20px;
 	margin-top: 30px;
 }
 
@@ -297,10 +260,10 @@ body {
 }
 
 #brain {
-	width: 130px;
-	height: 400px;
+	width: 200px;
+	height: 380px;
 	position: absolute;
-	top: 150px;
+	top: 80px;
 	right: 0px;
 }
 
@@ -320,15 +283,21 @@ body {
 	height: 300px;
 	width: 300px;
 	border-radius: 50%;
+	margin-top:10px;
 	left: 10%;
 	top: 25%;
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
+#profile:hover {
+	scale: 1.05;
+}
+
 .braindump-info {
-	font-size: 20px;
+	font-size: 19px;
 	text-align: left;
 	padding-left: 20px;
+	margin-bottom:10px;
 }
 
 #students-info {
@@ -384,18 +353,46 @@ body {
 	background-color: #ffffff;
 }
 
+#contact-btn {
+	border-radius: 16px;
+	height: 100px;
+	padding: 10px 30px;
+	background-color: #421d64;
+	color: white;
+}
+
+#contact-btn:hover {
+	background-color:#421d6495;
+	text-decoration: none;
+	scale: 1.1;
+}
 @media screen and (max-width: 1200px) {
+	.project-header,
+	.project-info,
+	.position-title {
+		margin-left: 20px;
+	}
+
+	.project-header {
+		font-size: 32px;
+	}
+
+	.project-info {
+		font-size: 14px;
+	}
 	#network {
 		right: 14%;
 	}
 
 	#brain {
 		height: 300px;
-		width: 100px;
+		width: 170px;
 	}
-
+	.subheader {
+		font-size:60px;
+	}
 	.name {
-		font-size: 70px;
+		font-size: 64px;
 	}
 }
 
@@ -406,18 +403,44 @@ body {
 
 	#brain {
 		top: 13%;
-		height: 300px;
-		width: 100px;
+		height: 270px;
+		width: 150px;
 	}
-
+	.subheader {
+		font-size:50px;
+	}
 	.name {
-		font-size: 64px;
+		font-size: 55px;
+	}
+	.hero {
+		font-size: 16px;
 	}
 }
 
 @media screen and (max-width: 767px) {
+	.project-logo {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-left: 0%;
+		width: 150px;
+		height: 150px;
+		position: relative;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.project-header,
+	.project-info,
+	.position-title {
+		margin-left: 10px;
+	}
+
 	.subheader {
-		font-size: 50px;
+		font-size: 32px;
+	}
+
+	.subheader-caption {
+		font-size: 20px;
 	}
 	#profile {
 		height: 200px;
@@ -427,13 +450,26 @@ body {
 		display: none;
 	}
 	.name {
-		font-size: 44px;
+		font-size: 40px;
 	}
 	.hero {
-		font-size: 18px;
+		font-size: 15px;
 	}
 	.braindump-info {
-		font-size: 20px;
+		font-size: 18px;
 		text-align: center;
 	}
+	.nb {
+		width: 100%;
+	}
+	.value-header {
+		font-size: 18px;
+	}
+
+#contact-btn {
+	height: 70px;
+	padding: 7px 20px;
+	font-size: 14px;
+}
+
 }
