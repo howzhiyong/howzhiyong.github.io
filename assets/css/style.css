@@ -19,7 +19,7 @@ footer {
 	width: 100% !important;
 	display: flex;
 	justify-content: center;
-	background: #e4def4;
+	background: #e4def4 !important;
 }
 .navbar a {
 	color:rgb(34, 46, 34);
@@ -44,7 +44,7 @@ footer {
 	justify-content: center;
 }
 
-.mb {
+.nb {
 	width: 90%;
 }
 
@@ -61,8 +61,6 @@ footer {
 	border: none;
 
 }
-
-.navbar-toggler-icon:active
 
 .gradient,
 .gradient-2 {
@@ -106,7 +104,7 @@ body {
 
 .name,
 .subheader {
-	font-family: "Manrope", "DM Sans";
+	font-family: "Manrope" sans-serif, "DM Sans" sans-serif;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 80px;
